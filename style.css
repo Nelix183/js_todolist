@@ -1,0 +1,102 @@
+:root{
+    --color-first: #6C4AB6;
+    --color-second: #8D72E1;
+    --color-third: #8D9EFF;
+    --color-fourth: #B9E0FF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: grid;
+    width: 100vw;
+}
+header{
+    background-color: var(--color-first);
+    color:  white;
+    height: 30vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh; 
+    display: grid;
+}
+header h2{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.names{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+main{
+    min-height: 60vh;
+    background-color: var(--color-second);
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+footer{
+    height: 10vh;
+    background-color: var(--color-first);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh; 
+}
+.tasks{
+    padding: 0 10px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.task{
+    margin-top: 10px;
+    background-color: var(--color-third);
+    color: white;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.task  p{
+    padding: 10px;
+    overflow-wrap: break-word;
+    width: calc(100% - 64px);
+    cursor: pointer;
+}
+.task  button{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+.task_add{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+header button{
+    aspect-ratio: 1 / 1;
+    border: none;
+    padding: 5px;
+    border-radius:  0 50% 50% 0;
+    background-color: var(--color-second);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+header button:hover{
+    background-color: var(--color-third);
+}
+input{
+    padding: 10px;
+    background-color: var(--color-second);
+    color: white;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    width: 33%;
+}
